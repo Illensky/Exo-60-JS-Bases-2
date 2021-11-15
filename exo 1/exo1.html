@@ -5,14 +5,21 @@
 <title>Essai DHTML</title>
 <meta charset="UTF-8">
 <script>
-	
+
 	function change_liste()
 		{
+			let ul = document.getElementsByTagName('ul')
+			let li = document.getElementsByTagName('li')
 
-			
-		
+			for (let i = 0; i < ul.length; i++) {
+				ul[i].style.listStyleType = 'circle'
+			}
+
+			for (let i = 0; i < li.length; i++) {
+				li[i].innerHTML = 'blabla'
+			}
 		}
-	
+
 </script>
 
 </head>
